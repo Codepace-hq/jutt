@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/jutt.iml" filepath="$PROJECT_DIR$/.idea/modules/jutt.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/jutt_main.iml" filepath="$PROJECT_DIR$/.idea/modules/jutt_main.iml" group="jutt" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/jutt_test.iml" filepath="$PROJECT_DIR$/.idea/modules/jutt_test.iml" group="jutt" />
+    </modules>
+  </component>
+</project>
