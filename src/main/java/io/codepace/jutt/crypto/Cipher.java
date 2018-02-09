@@ -1,14 +1,12 @@
 package io.codepace.jutt.crypto;
 
-import jdk.internal.jline.internal.Nullable;
-
 import java.io.*;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.Base64;
 
 /**
- * This class handles all basic hashing of strings and files.
+ * This class handles all basic hashing of strings and file.
  */
 public class Cipher {
 
@@ -23,7 +21,7 @@ public class Cipher {
      * @throws NoSuchAlgorithmException
      * @throws UnsupportedEncodingException
      */
-    public static String SHA256Encrypt(String data, @Nullable String salt) throws NoSuchAlgorithmException, UnsupportedEncodingException{
+    public static String SHA256Encrypt(String data, String salt) throws NoSuchAlgorithmException, UnsupportedEncodingException{
         MessageDigest digest = MessageDigest.getInstance(SHA256);
         return new String(digest.digest((data+salt).getBytes("UTF-8")));
     }
@@ -56,7 +54,7 @@ public class Cipher {
      * @throws UnsupportedEncodingException
      */
     @Deprecated
-    public static String SHA1Encrypt(String data, @Nullable String salt) throws NoSuchAlgorithmException, UnsupportedEncodingException{
+    public static String SHA1Encrypt(String data, String salt) throws NoSuchAlgorithmException, UnsupportedEncodingException{
         MessageDigest digest = MessageDigest.getInstance(SHA1);
         return new String(digest.digest((data+salt).getBytes("UTF-8")));
     }
